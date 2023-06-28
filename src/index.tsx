@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {splitSmth} from "./01-hello-tests/01";
+
+const sentence = "hello my friends!"
+
+const result = splitSmth(sentence)
+console.log(result[0]==="hello")
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
