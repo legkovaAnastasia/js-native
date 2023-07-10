@@ -1,33 +1,32 @@
-import {CityType} from "./02_02";
+import {MenType} from "./Destructuring";
 
-let city: CityType
-
-beforeEach(() => {
-    city = {
-        title: 'Msk',
-        houses: [{buildedAt: 2012, repaired: false, adress: {number: 100, street: {title: 'white street'}}},
-            {buildedAt: 2008, repaired: false, adress: {number: 100, street: {title: 'happy street'}}},
-            {buildedAt: 2020, repaired: false, adress: {number: 101, street: {title: 'happy street'}}}],
-        govermentBuildings: [],
-        citizensNumber: 100000
+let props: MenType
+beforeEach(()=> {
+    props = {
+        name: 'Nastya',
+        age: 30,
+        lessons: [{title: '1'}, {title: '2'}, {title: '3'}]
     }
 })
 
-test('city must contain 3 houses', () => {
-    expect(city.houses.length).toBe(3)
+test('', ()=> {
 
-    expect(city.houses[0].buildedAt).toBe(2012)
-    expect(city.houses[0].repaired).toBe(false)
-    expect(city.houses[0].adress.number).toBe(100)
-    expect(city.houses[0].adress.street.title).toBe('white street')
-
-    expect(city.houses[1].buildedAt).toBe(2008)
-    expect(city.houses[1].repaired).toBe(false)
-    expect(city.houses[1].adress.number).toBe(100)
-    expect(city.houses[1].adress.street.title).toBe('happy street')
-
-    expect(city.houses[2].buildedAt).toBe(2020)
-    expect(city.houses[2].repaired).toBe(false)
-    expect(city.houses[2].adress.number).toBe(101)
-    expect(city.houses[2].adress.street.title).toBe('happy street')
+    let {age} = props
+    expect(age).toBe(30)
 })
+
+test('1', ()=> {
+    let l1 = props.lessons[0]
+    let l2 = props.lessons[1]
+
+    let [,, ls3] = props.lessons  //если нужен доступ к третьему эл-ту массива, то перед
+                                                // деструктуризацией нужно оставить две пустоты
+    const [lesson1, ...restLessons] = props.lessons
+
+    // expect(ls1.title).toBe('1')
+    expect(ls3.title).toBe('3')
+    expect(lesson1.title).toBe('1')
+    expect(restLessons.length).toBe(2)
+
+})
+
