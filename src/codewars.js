@@ -89,16 +89,29 @@
 //
 // console.log(peopleWithAgeDrink(18))
 
-const betterThanAverage = (classPoints, yourPoints) => {
-    // debugger
-    // let array = classPoints.push(yourPoints)
-    let array = classPoints
-    let sum = 0
-    for (let i = 0; i < array.length; i++) {
-        sum += array[i]
-    }
-    let average = (sum + yourPoints) / (array.length + 1)
-    return average < yourPoints
-}
+// const betterThanAverage = (classPoints, yourPoints) => {
+//     // debugger
+//     // let array = classPoints.push(yourPoints)
+//     let array = classPoints
+//     let sum = 0
+//     for (let i = 0; i < array.length; i++) {
+//         sum += array[i]
+//     }
+//     let average = (sum + yourPoints) / (array.length + 1)
+//     return average < yourPoints
+// }
+//
+// console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75))
 
-console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75))
+// const areaOrPerimeter = function (l, w) {
+//     return l === w ? l * w : l * 2 + w * 2
+//     // Return your answer
+// };
+//
+// console.log(areaOrPerimeter(3, 5))
+
+function reverseList(list) {
+ return  list.reverse()
+ }
+
+console.log(reverseList([1,3,4,2]))
