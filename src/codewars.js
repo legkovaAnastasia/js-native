@@ -110,8 +110,23 @@
 //
 // console.log(areaOrPerimeter(3, 5))
 
-function reverseList(list) {
- return  list.reverse()
- }
+// function reverseList(list) {
+//  return  list.reverse()
+//  }
+//
+// console.log(reverseList([1,3,4,2]))
 
-console.log(reverseList([1,3,4,2]))
+// function distinct(a) {
+//  let unique = a.reduce((prev, cur)=>(prev.indexOf(cur)===-1)? [...prev,cur]:prev, [])
+//  return unique
+//  }
+// можно через Set
+// console.log(distinct([3,4,3,7,8,7]))
+
+class Kata {
+ static getVolumeOfCuboid(length, width, height) {
+  return length*width*height
+ }
+}
+
+console.log(Kata.getVolumeOfCuboid(2,5,3))
