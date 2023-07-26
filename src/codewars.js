@@ -123,10 +123,40 @@
 // можно через Set
 // console.log(distinct([3,4,3,7,8,7]))
 
-class Kata {
- static getVolumeOfCuboid(length, width, height) {
-  return length*width*height
- }
+// class Kata {
+//  static getVolumeOfCuboid(length, width, height) {
+//   return length*width*height
+//  }
+// }
+//
+// console.log(Kata.getVolumeOfCuboid(2,5,3))
+
+// function simpleMultiplication(number) {
+//   return  number%2==0 ? number=number*8 : number=number*9
+// }
+//
+// console.log(simpleMultiplication(2))
+
+function multiple(x) {
+    // if(x % 3 === 0){
+    //     return 'Bang'
+    // }if(x % 5 === 0){
+    //             return 'Boom';
+    // }if (x % 3 === 0 && x % 5 === 0){
+    //     return 'BangBoom'
+    // }else {
+    //     return 'Miss'
+    // }
+    switch (true) {
+        case x % 3 === 0 && x % 5 === 0:
+            return 'BangBoom';
+        case x % 3 === 0:
+            return 'Bang';
+        case x % 5 === 0 :
+            return 'Boom';
+        default:
+            return 'Miss'
+    }
 }
 
-console.log(Kata.getVolumeOfCuboid(2,5,3))
+console.log(multiple(10))
