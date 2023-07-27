@@ -69,4 +69,5 @@ export function updateCompany2(companies: {[key:string]: Array<CompanyType> },
                                newTitle:string){
     let copy = {...companies}
     copy[userName]=copy[userName].map(c=>c.id==companyId? {...c, title: newTitle}: c)
+    return copy
 }

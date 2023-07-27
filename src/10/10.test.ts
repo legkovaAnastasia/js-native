@@ -132,7 +132,6 @@ test('update company2', () => {
     }
 const copy=updateCompany2(companies, 'Nastya', 1, 'WWW')
     expect(copy).not.toBe(companies)
-    // @ts-ignore
     expect(copy['Nastya'][0].title).toBe('WWW')
 })
 
