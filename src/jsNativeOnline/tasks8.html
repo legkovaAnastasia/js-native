@@ -1,0 +1,21 @@
+<script>
+    function getBanknoteList(amountOfMoney) {
+        const banknotes = [1000, 500, 100, 50, 20, 10, 5, 2, 1]
+        let result = []
+        let a = 0
+        for (let i = 0; i < banknotes.length; i++) {
+            // debugger
+            a=amountOfMoney/banknotes[i]
+            // a=a.toFixed()
+            console.log(a)
+            amountOfMoney=amountOfMoney-banknotes[i]*Math.trunc(a)
+            // result.push(banknotes[i]*+a.toFixed())
+            for (let j = 0; j < Math.trunc(a); j++) {
+                result.push(banknotes[i])
+            }
+        }
+        return result
+    }
+
+
+</script>
