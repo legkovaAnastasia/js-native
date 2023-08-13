@@ -158,18 +158,37 @@
 //
 // console.log(addLength('sds dsfsf weweq'))
 
-function lowercaseCount(str){
-let count=0
-    let newstr= str.replace(/[^a-zA-Zа-яА-Я]/g, '', str)
-    if (newstr.length>0) {
-        for (let i = 0; i < newstr.length; i++) {
-            if (newstr[i] === newstr[i].toLowerCase()) {
-                count++
-            }
+// function lowercaseCount(str){
+// let count=0
+//     let newstr= str.replace(/[^a-zA-Zа-яА-Я]/g, '', str)
+//     if (newstr.length>0) {
+//         for (let i = 0; i < newstr.length; i++) {
+//             if (newstr[i] === newstr[i].toLowerCase()) {
+//                 count++
+//             }
+//         }
+//     }
+//     return count
+// }
+//
+// console.log(lowercaseCount("ABjjjjkC123!@€£#$%^&*()_-+=}{[]|;? />.<,~"))
+// console.log('756ksdcbjf327456345@#$@@#!'.replace(/[^a-zA-Zа-яА-Я ]/g,""))
+
+// function greet(name) {
+//     if (name === "Johnny") {
+//         return "Hello, my love!";
+//     } else return "Hello, " + name + "!"
+// }
+//
+// console.log(greet('vvv'))
+
+function removeEveryOther(arr){
+    let result = []
+    for (let i = 0; i < arr.length; i++) {
+        if(i%2===0){
+            result.push(arr[i])
         }
-    }
-    return count
+    }return result
 }
 
-console.log(lowercaseCount("ABjjjjkC123!@€£#$%^&*()_-+=}{[]|;? />.<,~"))
-console.log('756ksdcbjf327456345@#$@@#!'.replace(/[^a-zA-Zа-яА-Я ]/g,""))
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))
