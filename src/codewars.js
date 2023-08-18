@@ -182,13 +182,45 @@
 //
 // console.log(greet('vvv'))
 
-function removeEveryOther(arr){
-    let result = []
+// function removeEveryOther(arr){
+//     let result = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if(i%2===0){
+//             result.push(arr[i])
+//         }
+//     }return result
+// }
+//
+// console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))
+
+// function doubleChar(str) {
+//     let result = []
+//     let arr = str.split('')
+//     for (let i = 0; i < arr.length; i++) {
+//         result.push(arr[i])
+//         result.push(arr[i])
+//     }
+//     return result.join('')
+// }
+//
+// console.log(doubleChar('wEr_!'))
+
+function billboard(name, price = 30) {
+    let arr = name.split('')
+    let cost = 0
     for (let i = 0; i < arr.length; i++) {
-        if(i%2===0){
-            result.push(arr[i])
-        }
-    }return result
+        cost += price
+    }
+    return cost
 }
 
-console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))
+console.log(billboard('ann ty'))
+
+
+
+
+
+
+
+
+
