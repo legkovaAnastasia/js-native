@@ -205,16 +205,16 @@
 //
 // console.log(doubleChar('wEr_!'))
 
-function billboard(name, price = 30) {
-    let arr = name.split('')
-    let cost = 0
-    for (let i = 0; i < arr.length; i++) {
-        cost += price
-    }
-    return cost
-}
-
-console.log(billboard('ann ty'))
+// function billboard(name, price = 30) {
+//     let arr = name.split('')
+//     let cost = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         cost += price
+//     }
+//     return cost
+// }
+//
+// console.log(billboard('ann ty'))
 
 
 
