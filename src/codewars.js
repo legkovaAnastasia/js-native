@@ -217,6 +217,26 @@
 // console.log(billboard('ann ty'))
 
 
+// function stringy(size) {
+//     let str = ''
+//     for (let i = 1; i <= size; i++) {
+//         if (size > 0 && Number.isInteger(size)) {
+//             str += i % 2
+//         } else return 'wrong number'
+//     }
+//     return str
+// }
+// console.log(stringy(1.2))
+
+function sayHello( name, city, state ) {
+    return `Hello,  ${name.join(' ')}! Welcome to ${city}, ${state}! `
+}
+
+console.log(sayHello(['sdcs', 'sefcscfs', 'sdvsd'], 'cccc', 'cccdddd'))
+
+
+
+
 
 
 
