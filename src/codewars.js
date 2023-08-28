@@ -228,11 +228,43 @@
 // }
 // console.log(stringy(1.2))
 
-function sayHello( name, city, state ) {
-    return `Hello,  ${name.join(' ')}! Welcome to ${city}, ${state}! `
-}
+// function sayHello( name, city, state ) {
+//     return `Hello,  ${name.join(' ')}! Welcome to ${city}, ${state}! `
+// }
+//
+// console.log(sayHello(['sdcs', 'sefcscfs', 'sdvsd'], 'cccc', 'cccdddd'))
+//
+//
 
-console.log(sayHello(['sdcs', 'sefcscfs', 'sdvsd'], 'cccc', 'cccdddd'))
+// function evenOrOdd(number) {
+// return number%2===0? 'Even': 'Odd'
+// }
+//
+// console.log(evenOrOdd(11))
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+return Math.min.apply(null, args)
+    }
+}
+let obj = new SmallestIntegerFinder()
+console.log(obj.findSmallestInt([78,56,232,12,8]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
