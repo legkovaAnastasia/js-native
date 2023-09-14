@@ -242,20 +242,78 @@
 //
 // console.log(evenOrOdd(11))
 
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-return Math.min.apply(null, args)
-    }
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+// return Math.min.apply(null, args)
+//     }
+// }
+// let obj = new SmallestIntegerFinder()
+// console.log(obj.findSmallestInt([78,56,232,12,8]))
+
+//
+// function countSheeps(sheep) {
+//     let sum=0
+//     sheep=sheep.flat()
+//     for (let i = 0; i < sheep.length; i++) {
+//         if(sheep[i]===true||sheep[i]>0){
+//             sum+=1
+//         }
+//     }
+// return sum
+// }
+// console.log(countSheeps([[undefined,null,false,true,true,false,null,undefined], 2]))
+
+// function getPlanetName(id){
+//     var name;
+//     switch(id){
+//         case 1:
+//             name = 'Mercury'
+//             break;
+//         case 2:
+//             name = 'Venus'
+//             break;
+//         case 3:
+//             name = 'Earth'
+//             break;
+//         case 4:
+//             name = 'Mars'
+//             break;
+//         case 5:
+//             name = 'Jupiter'
+//             break;
+//         case 6:
+//             name = 'Saturn'
+//             break;
+//         case 7:
+//             name = 'Uranus'
+//             break;
+//         case 8:
+//             name = 'Neptune'
+//             break;
+//     }
+//
+//     return name;
+// }
+// console.log(getPlanetName(2))
+
+
+// function checkAlive (health) {
+//     if (health <= 0) {
+//         return false
+//     } else {
+//         return true
+//     }
+// }
+
+// console.log(checkAlive(0))
+
+function mystery() {
+    var results =
+        {sanity: 'Hello'};
+    return results;
 }
-let obj = new SmallestIntegerFinder()
-console.log(obj.findSmallestInt([78,56,232,12,8]))
 
-
-
-
-
-
-
+console.log(mystery())
 
 
 
