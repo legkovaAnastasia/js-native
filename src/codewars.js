@@ -307,14 +307,33 @@
 
 // console.log(checkAlive(0))
 
-function mystery() {
-    var results =
-        {sanity: 'Hello'};
-    return results;
+// function mystery() {
+//     var results =
+//         {sanity: 'Hello'};
+//     return results;
+// }
+//
+// console.log(mystery())
+
+// function doubleInteger(i) {
+//     return i*2;
+// }
+
+
+function pillars(numPill, dist, width) {
+let result = 0
+    if (numPill===1){
+        return 0
+    } if (numPill===2) {
+        // numPill = numPill-1
+         result = dist*100
+    } else {
+         result = (numPill-1)*dist*100 + (numPill-2)*width
+    }
+    return result
 }
 
-console.log(mystery())
-
+console.log(pillars(11, 15, 30))
 
 
 
