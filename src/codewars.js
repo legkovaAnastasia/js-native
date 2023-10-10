@@ -320,27 +320,40 @@
 // }
 
 
-function pillars(numPill, dist, width) {
-let result = 0
-    if (numPill===1){
-        return 0
-    } if (numPill===2) {
-        // numPill = numPill-1
-         result = dist*100
-    } else {
-         result = (numPill-1)*dist*100 + (numPill-2)*width
-    }
-    return result
+// function pillars(numPill, dist, width) {
+// let result = 0
+//     if (numPill===1){
+//         return 0
+//     } if (numPill===2) {
+//         // numPill = numPill-1
+//          result = dist*100
+//     } else {
+//          result = (numPill-1)*dist*100   + (numPill-2)*width
+//     }
+//     return result
+// }
+//
+//function positiveSum(arr) {
+//
+// } console.log(pillars(11, 15, 30))
+
+// function makeNegative(num) {
+//     return num > 0 ? num * -1
+//         : num === 0 ? 0 : num
+// }
+//
+// console.log(makeNegative(0
+// ))
+function positiveSum(arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]>0){
+            sum+=arr[i]
+        }
+    } return sum
 }
 
-console.log(pillars(11, 15, 30))
-
-
-
-
-
-
-
+console.log(positiveSum([1,-2,3,4,5]))
 
 
 

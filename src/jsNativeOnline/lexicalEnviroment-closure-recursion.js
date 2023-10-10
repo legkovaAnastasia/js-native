@@ -35,3 +35,13 @@
 // }
 // foo() //проверка кол-ва возмодных вызовов ф-ции без выхода из рекурсии
 
+const car1 = {
+    speed: 200
+}
+const car2 = {
+    speed: 220
+}
+
+function showSpeed(){
+    console.log(this.speed)
+}
