@@ -344,25 +344,52 @@
 //
 // console.log(makeNegative(0
 // ))
-function positiveSum(arr) {
-    let sum = 0
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]>0){
-            sum+=arr[i]
-        }
-    } return sum
-}
+// function positiveSum(arr) {
+//     let sum = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i]>0){
+//             sum+=arr[i]
+//         }
+//     } return sum
+// }
+//
+// console.log(positiveSum([1,-2,3,4,5]))
 
-console.log(positiveSum([1,-2,3,4,5]))
+// function evenOrOdd(number) {
+//     return number % 2 === 0 ? 'Even' : 'Odd'
+// }
+//
+// console.log(evenOrOdd(4))
 
+// function greet(name){
+// return `Hello, ${name} how are you doing today?`
+// }
+//
+// console.log(greet('gdfgdfgdfg'))
 
+// var findAverage = function (nums) {
+//     let average = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         average += nums[i]
+//     }
+//     return average / nums.length
+// }
+// console.log(findAverage([1, 3, 5, 7]))
 
+// var replaceDots = function(str) {
+//     return str.replace(/\./g, '-');
+// }
+// console.log(replaceDots('fdsf-dfsdf.'))
 
+// function buildString(...template){
+//     return `I like ${template.join(', ')}!`;
+// }
+//
+// console.log(buildString('Cheese','Milk','Chocolate'))
 
-
-
-
-
-
-
+// function addLength(str) {
+//     const wordsArray = str.split(' ')
+//
+//     return  wordsArray.map(word => `${word} ${word.length}`)
+// }
 
