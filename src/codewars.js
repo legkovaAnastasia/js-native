@@ -392,4 +392,14 @@
 //
 //     return  wordsArray.map(word => `${word} ${word.length}`)
 // }
+// function hero(bullets, dragons){
+//     return  bullets/dragons>2?true : false
+// }
+//
+// console.log(hero(0,5))
+function findNeedle(haystack) {
+let index =haystack.indexOf('needle')
+    return `found the needle at position ${index}`
+}
 
+console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
