@@ -403,24 +403,3 @@
 // }
 //
 // console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
-
-function* generateSalaryWithBonus(salary) {
-    const a =yield salary + (salary * 0.15) //15
-    console.log(a)
-    const b = yield salary + (salary * 0.2)
-    console.log(b)
-}
-const generator = generateSalaryWithBonus(2000)
-console.log(generator.next())
-console.log(generator.next(15))
-// console.log(generator.next())
-// console.log(1000+(1000*0.15))
-
-function* randomize(){
-    while (true) {
-        let randome = yield Math.floor(Math.random()*1000)
-        // yield randome
-    }
-}
-const randome = randomize()
-console.log(randome.next().value)
